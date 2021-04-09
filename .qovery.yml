@@ -1,0 +1,16 @@
+---
+application:
+  name: "op"
+  project: "op-123"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "op"
+    size: "500"
+    type: "hdd"
+    mount_point: "/mnt/op"
+routers:
+- name: "main-op"
+  routes:
+  - application_name: "op"
+    paths:
+    - "/*"
